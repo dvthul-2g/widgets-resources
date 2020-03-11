@@ -3,7 +3,7 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Team
  */
-import { ActionValue, DynamicValue, NativeIcon } from "mendix";
+import { ActionValue, DynamicValue, EditableValue, NativeIcon } from "mendix";
 
 interface CommonProps<Style> {
     name: string;
@@ -45,4 +45,10 @@ export interface MapsProps<Style> extends CommonProps<Style> {
     provider: ProviderEnum;
     interactive: boolean;
     showsUserLocation: boolean;
+    showRegionMarker: boolean;
+    regionIcon?: DynamicValue<NativeIcon>;
+    setLocationText: string;
+    changeNanoflow?: ActionValue;
+    longitudeAttribute?: EditableValue<BigJs.Big>;
+    latitudeAttribute?: EditableValue<BigJs.Big>;
 }

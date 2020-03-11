@@ -157,5 +157,37 @@
                 <description>Show the current location of the user, requires permission to access the user's location.</description>
             </property>
         </propertyGroup>
+        <propertyGroup caption="RegionMarker">
+            <property key="showRegionMarker" type="boolean" defaultValue="false">
+                <caption>Show region marker</caption>
+                <description>Show a marker at the center of the users view.</description>
+            </property>
+            <property key="regionIcon" type="icon" required="false">
+                <caption>Icon</caption>
+                <description>Icon to put in the middle of the map</description>
+            </property>
+            <property key="setLocationText" type="string" defaultValue="Set as location">
+                <caption>set location button</caption>
+                <description>Text in the button to set the location selected by the user.</description>
+            </property>
+            <property key="changeNanoflow" type="action">
+                <caption>changeNanoflow</caption>
+                <description>changeNanoflow</description>
+            </property>
+            <property key="longitudeAttribute" type="attribute" required="false">
+                <caption>Longitude</caption>
+                <description>Attribute to save the selected longitude in</description>
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+            <property key="latitudeAttribute" type="attribute" required="false">
+                <caption>Latitude</caption>
+                <description>Attribute to save the selected latitude in</description>
+                <attributeTypes>
+                    <attributeType name="Decimal"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
     </properties>
 </widget>
