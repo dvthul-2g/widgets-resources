@@ -159,12 +159,13 @@ export class Maps extends Component<Props, State> {
                             style={{
                                 borderWidth: 1,
                                 borderRadius: 2.5,
-                                backgroundColor: "#23a1ff",
-                                borderColor: "#23a1ff",
-                                padding: 5
+                                backgroundColor: "#76CA02",
+                                borderColor: "#76CA02",
+                                padding: 5,
+                                width: "100%"
                             }}
                         >
-                            <Text style={{ color: "#ffffff" }}>{this.props.setLocationText}</Text>
+                            <Text style={{ color: "#ffffff", alignSelf: "center" }}>{this.props.setLocationText}</Text>
                         </TouchableOpacity>
                     </View>
                 )}
